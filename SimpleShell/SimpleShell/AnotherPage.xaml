@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Another"
+             x:Class="SimpleShell.AnotherPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="20"
+                   Text="Notice the OnAppearing method in the code behind never fires for the 'interior' (not the first) page of a tab group. There is some confusion as to whether the Shell 'Navigating' and 'Navigated' callback properties replace these? Or maybe this is a bug? If it isn't a bug, how would we reach the currently loaded page/vm from the code behind of the shell??" />
+            <Button Text="Go to Shell docs"
+                    Clicked="Button_Clicked"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

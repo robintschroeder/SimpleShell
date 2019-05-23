@@ -17,5 +17,11 @@ namespace SimpleShell
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            System.Diagnostics.Debug.WriteLine("Main Page Appearing");
+        }
     }
 }

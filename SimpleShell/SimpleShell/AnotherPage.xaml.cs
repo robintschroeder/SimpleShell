@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace SimpleShell
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutPage : ContentPage
+    public partial class AnotherPage : ContentPage
     {
-        public AboutPage()
+        public AnotherPage()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace SimpleShell
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            System.Diagnostics.Debug.WriteLine("About Page Appearing");
+            System.Diagnostics.Debug.WriteLine("Another Page Appearing");
         }
 
         private void Button_Clicked(object sender, EventArgs e)
